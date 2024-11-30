@@ -16,8 +16,8 @@ Before you begin, ensure you have the following installed on your machine:
    Open your terminal and run the following command to clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git https://github.com/Naimur444/dbms_project
+   cd dbms_project
    ```
 
 2. **Install PHP Dependencies**
