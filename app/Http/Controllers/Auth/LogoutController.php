@@ -9,7 +9,14 @@ class LogoutController extends Controller
 {
     public function logout()
     {
+        // Log the user out
         Auth::logout();
+
+        // Clear the session to avoid CSRF issues
+        session()->flush();
+
+        // Redirect the user to the login page
         return redirect()->route('login');
     }
 }
+
