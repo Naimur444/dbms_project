@@ -29,7 +29,7 @@ class LoginController extends Controller
             if ($user->is_admin) {
                 return redirect()->route('admin.dashboard'); // If admin, redirect to admin dashboard
             } else {
-                return redirect()->route('user.dashboard'); // If regular user, redirect to user dashboard
+                return redirect()->route('dashboard.index'); // If regular user, redirect to user dashboard
             }
         }
 
